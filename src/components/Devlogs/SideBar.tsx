@@ -182,7 +182,7 @@ export default function SideBar({ tree }: SideBarProps) {
     <>
       {/* Mobile open button */}
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => setIsOpen(!isOpen)}
         className="md:hidden fixed bottom-6 right-6 p-4 bg-blue-600 text-white rounded-full shadow-lg shadow-blue-500/40 active:scale-95 transition-transform z-50"
         aria-label="Open Navigation"
       >
@@ -192,7 +192,7 @@ export default function SideBar({ tree }: SideBarProps) {
       {/* Backdrop */}
       {isOpen && (
         <div
-          onClick={() => setIsOpen(false)}
+          onClick={() => setIsOpen(!isOpen)}
           className="fixed inset-0 bg-black/60 backdrop-blur-sm md:hidden z-40 animate-in fade-in duration-200"
         />
       )}
@@ -208,7 +208,7 @@ export default function SideBar({ tree }: SideBarProps) {
             Devlogs
           </span>
           <button
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpen(!isOpen)}
             className="p-1 text-slate-500 hover:text-white transition-colors"
           >
             <X size={20} />
@@ -221,7 +221,7 @@ export default function SideBar({ tree }: SideBarProps) {
             expanded={mergedExpanded}
             toggle={toggle}
             pathname={pathname}
-            onNavigate={() => setIsOpen(false)}
+            onNavigate={() => setIsOpen(!isOpen)}
           />
         </div>
       </aside>
