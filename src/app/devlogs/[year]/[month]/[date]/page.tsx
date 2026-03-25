@@ -11,7 +11,8 @@ import { notFound } from "next/navigation"
 // import path from "path"
 
 export const runtime = "nodejs"
-export const dynamic = "force-dynamic"
+// export const dynamic = "force-dynamic"
+export const revalidate = 3600; //ISR
 
 
 
