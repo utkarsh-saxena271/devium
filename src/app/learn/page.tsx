@@ -2,9 +2,9 @@
 
 export default function learnPage(){
   return (
-    <div className="flex justify-center items-center w-screen h-[80vh]">
-        <div className="text-7xl font-thin">
-            COMING SOON
+    <div className="flex justify-center items-center h-screen px-3">
+        <div className="text-xl md:text-5xl font-thin">
+            Architecture is completed, content will be added slowly! Stay tuned.
         </div>
     </div>
   )
