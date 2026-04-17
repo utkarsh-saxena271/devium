@@ -33,7 +33,7 @@ export default function Hero() {
 
             {/* first section */}
             <div className="relative col-span-1 border-t border-b border-l border-dashed border-neutral-400/40 animate-opc">
-            <div className="absolute left-full md:top-[84%] lg:top[85%] -translate-x-1/2 hidden md:block rounded-full w-20 h-20 border border-rw-transparent rotate-45 border-dashed border-neutral-400/40 animate-opc" />
+            <div className="absolute left-full md:top-[84%] lg:top[85%] -translate-x-1/2 hidden md:block rounded-full w-20 h-20 border border-r-transparent rotate-45 border-dashed border-neutral-400/40 animate-opc" />
             </div>
             <h1 className="text-zinc-50 col-span-5 border border-dashed border-neutral-400/40 flex items-center justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl py-15 px-5 animate-opc">Learn development through real experiences and projects.</h1>
 
