@@ -58,7 +58,7 @@ const sections: Section[] = [
 
 const Devlogs = () => {
   return (
-    <main className="min-h-screen px-8 py-20 bg-slate-800 text-slate-100">
+    <main className="min-h-screen px-8 py-20 bg-zinc-950 text-slate-100">
       <div className="max-w-4xl mx-auto space-y-16">
 
         {/* Heading */}

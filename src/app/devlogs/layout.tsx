@@ -16,7 +16,7 @@ export default function DevlogsLayout({
   const tree = getDevlogsTree()
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen w-screen bg-zinc-900 flex">
       {/* Sidebar */}
       <SideBar tree={tree} />
 

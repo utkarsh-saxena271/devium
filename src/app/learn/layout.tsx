@@ -15,7 +15,7 @@ export default function LearnLayout({
   const tree = getLearnTree();
 
   return (
-    <div className="min-h-screen flex bg-slate-950">
+    <div className="min-h-screen flex bg-zinc-900">
       {/* Recursive Sidebar */}
       <SideBar tree={tree} />
 

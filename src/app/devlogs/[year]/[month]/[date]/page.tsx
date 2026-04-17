@@ -29,7 +29,7 @@ export default async function DevlogDatePage({ params }: PageProps) {
     const { default: Post } = await import(`@/content/devlogs/${main_path}.mdx`)
 
     return (
-      <article className="px-6 py-12 max-w-5xl mx-auto">
+      <article className="py-12 max-w-5xl mx-auto">
         {/* <h1 className="text-3xl font-semibold mb-8">
           Devlog · {year}/{month}/{date}
         </h1> */}
