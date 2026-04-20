@@ -20,7 +20,7 @@ export default function NavLinks({ stars }: { stars: number }) {
           Devlogs
         </Link>
         <Link 
-          href="https://github.com/utkarsh-saxena271/utkarsh-open-devlogs" 
+          href="https://github.com/utkarsh-saxena271/devium" 
           className="cursor-pointer flex items-center justify-center gap-2 border border-zinc-600/60 px-3 py-1 rounded-md hover:text-zinc-200 hover:border-zinc-300/50 group transition-color ease-in-out duration-150"
         >
           <span className="cursor-pointer flex items-center justify-center gap-2"> <BsGithub/> Star on Github</span>
@@ -56,7 +56,7 @@ export default function NavLinks({ stars }: { stars: number }) {
             Devlogs
           </Link>
           <Link 
-            href="https://github.com/utkarsh-saxena271/utkarsh-open-devlogs" 
+            href="https://github.com/utkarsh-saxena271/devium" 
             onClick={closeMenu}
             className="cursor-pointer flex items-center justify-center gap-7 border border-zinc-600/60 px-3 py-1 rounded-md text-zinc-400 hover:text-zinc-200 hover:border-zinc-300/50 transition-color ease-in-out duration-150"
           >

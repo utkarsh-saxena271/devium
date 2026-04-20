@@ -16,7 +16,7 @@ export default function OpenSource() {
                 </p>
             </div>
             <div className="flex items-center justify-center gap-5">
-                <Link href='https://github.com/utkarsh-saxena271/utkarsh-open-devlogs' target="_blank" className="text-xs md:text-sm  lg:text-lg text-zinc-200 cursor-pointer flex items-center gap-2 border border-zinc-600/60 px-4 py-2 rounded-md hover:text-white hover:shadow-lg hover:shadow-zinc-500/40 hover:border-zinc-300/50 transition-color ease-in-out duration-150">
+                <Link href='https://github.com/utkarsh-saxena271/devium' target="_blank" className="text-xs md:text-sm  lg:text-lg text-zinc-200 cursor-pointer flex items-center gap-2 border border-zinc-600/60 px-4 py-2 rounded-md hover:text-white hover:shadow-lg hover:shadow-zinc-500/40 hover:border-zinc-300/50 transition-color ease-in-out duration-150">
                     <BsGithub />
                     Explore Repository
                 </Link>

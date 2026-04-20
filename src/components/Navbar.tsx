@@ -7,7 +7,7 @@ import NavLinks from "./NavLinks";
 const getGithubStars = async () => {
   try {
     const res = await fetch(
-      "https://api.github.com/repos/utkarsh-saxena271/utkarsh-open-devlogs",
+      "https://api.github.com/repos/utkarsh-saxena271/devium",
       { next: { revalidate: 3600 } }
     );
     if (!res.ok) return 0;
@@ -43,7 +43,7 @@ export default async function Navbar(){
 // const getGithubStars = async () => {
 //   try {
 //     const res = await fetch(
-//       "https://api.github.com/repos/utkarsh-saxena271/utkarsh-open-devlogs",
+//       "https://api.github.com/repos/utkarsh-saxena271/devium",
 //       { next: { revalidate: 3600 } }
 //     );
 //     if (!res.ok) return 0;
@@ -86,7 +86,7 @@ export default async function Navbar(){
 //         </Link>
 
 //         <Link
-//           href="https://github.com/utkarsh-saxena271/utkarsh-open-devlogs"
+//           href="https://github.com/utkarsh-saxena271/devium"
 //           target="_blank"
 //           className="flex items-center gap-2 px-4 py-2 rounded-md bg-green-600 hover:bg-green-500 text-lg transition-colors"
 //         >
