@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Devium
 
-## Getting Started
+Devium is an open-source platform focused on learning web development through real developer experiences.
 
-First, run the development server:
+It combines:
+- Devlogs documenting real progress, experiments, and lessons
+- Learning resources and roadmaps
+- Structured content for developers building in public
+
+## Features
+
+- Daily / regular devlogs
+- Learning roadmaps
+- Free development resources
+- Open-source and community driven
+- Minimal and clean UI
+
+## Sections
+
+### Devlogs
+A collection of logs documenting:
+- what was built
+- what was learned
+- blockers faced
+- solutions and reflections
+
+### Learn
+Structured educational content including:
+- roadmaps
+- guides
+- resources
+- future interactive lessons
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Vercel
+
+## Philosophy
+
+Devium is built around one simple idea:
+
+> Learn by building, documenting, and sharing.
+
+Instead of endlessly consuming tutorials, the goal is to:
+- build projects
+- write about learnings
+- reflect publicly
+- improve through iteration
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/utkarsh-saxena271/devium.git
+cd devium
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+Contributions are welcome.
 
-To learn more about Next.js, take a look at the following resources:
+You can contribute by:
+- fixing bugs
+- improving UI/UX
+- adding resources
+- improving documentation
+- suggesting features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Planned features:
+- more learning paths
+- interactive typed lessons
+- better roadmap system
+- search functionality
+- community contributions
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Built by Utkarsh.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- X/Twitter: [@404not_utkarsh](https://x.com/404not_utkarsh)
+
+## License
+
+MIT License
