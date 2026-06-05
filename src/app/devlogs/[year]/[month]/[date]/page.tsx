@@ -7,6 +7,7 @@ interface PageProps {
 }
 
 import fs from "fs"
+import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import path from "path"
 // import path from "path"
@@ -15,6 +16,33 @@ export const runtime = "nodejs"
 // export const dynamic = "force-dynamic"
 export const revalidate = 3600; //ISR
 
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { year, month, date } = await params;  // ← date, not day
+
+  const dateObj = new Date(`${year}-${month}-${date}`);
+  const formattedDate = dateObj.toLocaleDateString("en-GB", {
+    day: "numeric", month: "long", year: "numeric",
+  });
+
+  const title = `Devlog — ${formattedDate}`;
+  const description = `Developer log for ${formattedDate}. Daily progress, learnings, and reflections by Utkarsh.`;
+  const url = `/devlogs/${year}/${month}/${date}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${title} | Devium`,
+      description,
+      url,
+      type: "article",
+      publishedTime: `${year}-${month}-${date}`,
+    },
+    twitter: { card: "summary_large_image", title: `${title} | Devium`, description },
+  };
+}
 
 
 export default async function DevlogDatePage({ params }: PageProps) {

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Learn",
+  description:
+    "Structured learning paths, roadmaps, and curated resources for frontend, backend, and full-stack web development. Free and open source.",
+  alternates: { canonical: "/learn" },
+};
 
 export default function learnPage(){
   return (

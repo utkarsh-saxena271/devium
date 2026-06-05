@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import { Montserrat, Roboto } from "next/font/google"
+
+export const metadata: Metadata = {
+  title: "Devlogs",
+  description:
+    "Daily logs of building, learning, and figuring things out. Real developer experiences — DSA practice, bugs, decisions, and lessons learned.",
+  alternates: { canonical: "/devlogs" },
+};
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["600", "700"] })
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500"] })
