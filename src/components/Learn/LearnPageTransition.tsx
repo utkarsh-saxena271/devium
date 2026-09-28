@@ -1,7 +1,7 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 
 function Skeleton() {
   return (
@@ -46,15 +46,12 @@ function isLearnLink(href: string) {
 export default function LearnPageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const [showSkeleton, setShowSkeleton] = useState(false)
-  const committedPathname = useRef(pathname)
+  const [prevPathname, setPrevPathname] = useState(pathname)
 
-  useEffect(() => {
-    if (pathname !== committedPathname.current) {
-      committedPathname.current = pathname
-      setShowSkeleton(false)
-    }
-  }, [pathname])
-
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname)
+    setShowSkeleton(false)
+  }
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const target = (e.target as Element).closest("a")
